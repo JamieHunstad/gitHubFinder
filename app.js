@@ -9,18 +9,35 @@ searchUser.addEventListener("keyup", (e) =>{
     if(userText !== ''){
         github.getUser(userText)
         .then(data => {
-            console.log(data);
             if(data.profileData.message === "Not Found") {
                 //Show Alert
-                console.log("Alert");
+                alert("Alert");
             } else {
                 // Show Profile
                 ui.showProfile(data.profileData);
+                ui.showRepo(data.repos);
             }
         });
     } else {
         // Clear Section
-
-        console.log("Clear")
+        ui.clearProfile();
     }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -133,7 +133,7 @@ body{
     margin-bottom:10px;
 }
 .repo p{
-    margin-right:150px;
+    width: 275px;
     color: #ADADAD;
 }
 .innerRepo{

@@ -28,14 +28,30 @@ class Ui {
         </div>
         <div id="bottomCard">
             <h2>Latest Repos</h2>
-            <div class="repo">
-                <p>Thing 1</p>
-                <div class="innerRepo">Thing</div>
-                <div class="innerRepo">Thing</div>
-                <div class="innerRepo">Thing</div>
+            <div id="repoContainer">
+            
             </div>
         </div>
     </div>
         `;
+    }
+
+    clearProfile(){
+        this.profile.innerHTML = "";
+    }
+
+    showRepo(repos){
+        let output = "";
+        repos.forEach((repo)=>{
+            output += `
+            <div class="repo">
+                <p>${repo.name}</p>
+                <div class="innerRepo">Stars: ${repo.stargazers_count}</div>
+                <div class="innerRepo">Watchers: ${repo.watchers_count}</div>
+                <div class="innerRepo">Forks: ${repo.forks_count}</div>
+            </div>
+            `
+        });
+        document.getElementById("repoContainer").innerHTML = output;
     }
 }
