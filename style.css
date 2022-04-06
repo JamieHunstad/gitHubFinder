@@ -7,13 +7,17 @@
     --titleFont: OpenSans-Regular ;
     --bodyFont: Helvetica;
 }
+a{
+    color:white;
+    text-decoration: none;
+}
 h2{
     font-family: var(--bodyFont);
     font-size:14px;
     color: #ADADAD;
 }
 h3{
-    font-size: 14px;
+    font-size: 12px;
     font-family: var(--bodyFont);
     color: #ADADAD;
 }
@@ -51,7 +55,7 @@ body{
   text-align: left;
 }
 #searchUser{
-    width:500px;
+    width:550px;
     border: none;
     height: 40px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.13);
@@ -116,7 +120,7 @@ body{
     margin-left: 20px;
     margin-right: 20px;
 }
-#bottomCard h3{
+#bottomCard h2{
     margin-top: 20px;
     margin-bottom: 10px;
 }
